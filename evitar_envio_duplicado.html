@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" id="formulario">
+        <input type="button" value="Enviar" onclicks="this.disabled = true; this.value='Enviando...'; this.form.submit()">
+        <!--Las instrucciones que están dentro del evento onclick se ejecutan en el momento en que el usuario hace click sobre el botón-->
+        <!--Lo primero que se hace es deshabilitar el boton mediante this.disabled = true; para evitar que  el usuario haga click varias veces -->
+        <!--Lo siguiente que se hace es cambiar el mensaje que muestra el botón de "Enviar" a "Enviando..."-->
+        <!--La última acción que se realiza es enviar el formulario a través de la función sumit() en la instrucción this.form.submit()-->
+    </form>
+</body>
+</html>
